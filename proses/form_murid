@@ -1,0 +1,23 @@
+
+<?php
+include 'config.php';
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $id_murid = $_POST["id_murid"];
+    $nama = $_POST["nama"];
+    $kelas = $_POST["kelas"];
+    $alamat = $_POST["alamat"];
+    $notlp = $_POST["notlp"];
+    $gender = $_POST["gender"];
+
+    // Insert data into database
+    $sql = "INSERT INTO murid (id_murid, nama, kelas, alamat, notlp, gender) VALUES ('$id_murid', '$nama', '$kelas', '$alamat', '$notlp', '$gender')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+$conn->close();
