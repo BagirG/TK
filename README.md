@@ -24,3 +24,7 @@ Mengakes file aplikasi<br>
 - jika anda menggunakan wamp, copykan aplikasi di driectory www dan buka aplikasi di browser dengan mengakses http://localhost/tabungansiswa/login.php.
 <br>
 Aplikasi ini dibuat untuk kebutuhan belajar php dasar untuk pemula.<br> Tampilan full aplikasi dapat dilihat di https://tk.aazka.psiab.or.id/login.php
+username : dian
+pw : dian
+
+
